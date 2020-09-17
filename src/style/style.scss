@@ -1,0 +1,43 @@
+@import 'variable';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: $background;
+  color: $fontColor;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.custom-btn {
+  color: $secondColor;
+  text-transform: uppercase;
+  background: transparent;
+  padding: $space $space * 2;
+  border: 1px solid $secondColor;
+  border-radius: 3px;
+  transition: all 0.3s ease-in;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:active {
+    color: $color1;
+    background: $secondColor;
+    box-shadow: 0px 6px 20px 10px rgba(75, 168, 255, 0.2);
+  }
+}
